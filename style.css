@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.screen {
+    width: 95%;
+    height: 20%;
+    background-color: azure;
+    border-radius: 25px;
+}
+
+main {
+    margin: 0 auto;
+    padding-top: 5px;
+    background-color: blueviolet;
+    height: 900px;
+    width: 550px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 25px;
+}
+
+button {
+    margin: 5px;
+    border: none;
+    border-radius: 25px;
+    font-size: 34px;
+}
+
+button:not([class]) {
+    background-color: aqua;
+    width: 120px;
+    height: 120px;
+}
+
+.clear, .delete {
+    height: 100px;
+    width: 240px;
+    text-transform: uppercase;
+}
+
+.clear {
+    background-color: orange;
+}
+
+.delete {
+    background-color: orangered;
+}
+
+.clear:active {
+    background-color: black;
+    color: orange;
+}
+
+.delete:active {
+    background-color: black;
+    color: orangered;
+}
+
+button:not([class]):active {
+    background-color: black;
+    color: aqua;
+}
